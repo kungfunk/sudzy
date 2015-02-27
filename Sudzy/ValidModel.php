@@ -121,7 +121,7 @@ abstract class ValidModel extends \Model
         if (!empty($errs))
             $this->doValidationError(self::ON_SAVE);
 
-        parent::save();
+        return parent::save();
     }
 
     /**
